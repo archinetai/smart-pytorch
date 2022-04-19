@@ -96,12 +96,11 @@ tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 regularizer = SMARTBertClassificationLoss(model)
 
 text = "Input text..."
-inputs = tokenizer(text, return_tensors='pt')
-outputs = model(**inputs)    
+input_ids = tokenizer(text, return_tensors='pt')['input_ids']
 
-# Compute reference embed and state from input tokens and output logits 
-embed = model.bert.embeddings(inputs['input_ids'], inputs['token_type_ids']) # [1, 7, 768]
-state = F.log_softmax(outputs['logits'], dim=1) # [1, num_labels]
+# Compute token embeddings and output state
+embed = model.bert.embeddings(input_ids) # [1, 7, 768]
+state = regularizer.eval(embed) # [1, 3]
 
 loss = regularizer(embed, state)
 loss # tensor(0.0009563789, grad_fn=<AddBackward0>)
