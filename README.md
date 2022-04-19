@@ -12,7 +12,7 @@ A PyTorch implementation of <a href="https://aclanthology.org/2020.acl-main.197.
 $ pip install smart-pytorch
 ```
 
-[![NPM](https://img.shields.io/pypi/v/smart-pytorch?style=flat&colorA=0f0f0f&colorB=0f0f0f)](https://pypi.org/project/smart-pytorch/) 
+[![PyPI - Python Version](https://img.shields.io/pypi/v/smart-pytorch?style=flat&colorA=0f0f0f&colorB=0f0f0f)](https://pypi.org/project/smart-pytorch/) 
 
 ## Usage
 
