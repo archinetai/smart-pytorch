@@ -3,7 +3,7 @@
 
 # SMART - PyTorch
 
-A PyTorch implementation of <a href="https://aclanthology.org/2020.acl-main.197.pdf">SMART</a>, a regularization technique to better fine-tune pretrained language models. 
+A PyTorch implementation of <a href="https://aclanthology.org/2020.acl-main.197.pdf">SMART</a>, a regularization technique to fine-tune pretrained language models. 
 
 ## Install
 
@@ -53,7 +53,7 @@ Where `eval_fn` is a function (usually a neural network) that takes as input an 
 
 ### BERT Classification Example
 
-This example demostrates how to wrap a BERT classifier from Huggingface to use with smart, the `eval_fn` in this case takes as input the embedding of the word vectors and produces the `log_softmax` of the logits which is compared with a `kl_div` as `loss_fn` function. 
+This example demostrates how to wrap a BERT classifier from Huggingface to use with SMART, the `eval_fn` in this case takes as input the embedding of the word vectors and produces the `log_softmax` of the logits which is compared with a `kl_div` as `loss_fn` function. 
 
 ```py
 import torch
