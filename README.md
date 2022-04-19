@@ -5,6 +5,15 @@
 
 A PyTorch implementation of <a href="https://aclanthology.org/2020.acl-main.197.pdf">SMART</a>, a regularization technique to better fine-tune pretrained language models. 
 
+## Install
+
+```bash
+$ pip install smart-pytorch
+```
+
+## Usage
+
+
 ## Citations
 
 ```bibtex
