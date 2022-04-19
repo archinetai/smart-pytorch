@@ -2,15 +2,17 @@
 <img src="./SMART.png"></img>
 
 
-[![NPM](https://img.shields.io/pypi/v/smart-pytorch?style=flat&colorA=0f0f0f&colorB=0f0f0f)](https://pypi.org/project/smart-pytorch/) 
+# SMART - PyTorch
+
+A PyTorch implementation of <a href="https://aclanthology.org/2020.acl-main.197.pdf">SMART</a>, a regularization technique to fine-tune pretrained (language) models. 
+
+## Install
 
 ```bash
 $ pip install smart-pytorch
 ```
 
-# SMART - PyTorch
-
-A PyTorch implementation of <a href="https://aclanthology.org/2020.acl-main.197.pdf">SMART</a>, a regularization technique to fine-tune pretrained language models. 
+[![NPM](https://img.shields.io/pypi/v/smart-pytorch?style=flat&colorA=0f0f0f&colorB=0f0f0f)](https://pypi.org/project/smart-pytorch/) 
 
 ## Usage
 
