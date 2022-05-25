@@ -6,7 +6,7 @@ setup(
   version = '0.0.3',
   license='MIT',
   description = 'SMART Fine-Tuning - Pytorch',
-  long_description='SMART Fine-Tuning - Pytorch',
+  long_description_content_type = 'text/markdown',
   author = 'Flavio Schneider',
   author_email = 'archinetai@protonmail.com',
   url = 'https://github.com/archinetai/smart-pytorch',
