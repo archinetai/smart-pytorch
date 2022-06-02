@@ -1,11 +1,10 @@
-from typing import List, Union, Callable
+from typing import Union, Callable
 
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch import Tensor
 from itertools import count 
-from inspect import isfunction
 
 def exists(val):
     return val is not None
@@ -13,7 +12,7 @@ def exists(val):
 def default(val, d):
     if exists(val):
         return val
-    return d() if isfunction(d) else d
+    return d
 
 def inf_norm(x):
     return torch.norm(x, p=float('inf'), dim=-1, keepdim=True)
@@ -41,7 +40,7 @@ class SMARTLoss(nn.Module):
         self.epsilon = epsilon 
         self.noise_var = noise_var
         
-    def forward(self, embed: Tensor, state: Union[Tensor, List[Tensor]]) -> Tensor:
+    def forward(self, embed: Tensor, state: Tensor) -> Tensor:
         noise = torch.randn_like(embed, requires_grad=True) * self.noise_var
 
         # Indefinite loop with counter 
