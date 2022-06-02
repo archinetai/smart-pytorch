@@ -13,7 +13,7 @@ def exists(val):
 def default(val, d):
     if exists(val):
         return val
-    return d() if isfunction(d) else d
+    return d
 
 def inf_norm(x):
     return torch.norm(x, p=float('inf'), dim=-1, keepdim=True)
