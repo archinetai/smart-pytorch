@@ -4,7 +4,7 @@
 
 # SMART - PyTorch
 
-A PyTorch implementation of <a href="https://aclanthology.org/2020.acl-main.197.pdf">SMART</a>, a regularization technique to fine-tune pretrained (language) models. 
+A PyTorch implementation of <a href="https://aclanthology.org/2020.acl-main.197.pdf">SMART</a>, a regularization technique to fine-tune pretrained (language) models. You might also be interested in <a href="https://github.com/archinetai/vat-pytorch">vat-pytorch</a>, a more generic collection of virtual adversarial training (VAT) methods, in PyTorch. 
 
 ## Install
 
